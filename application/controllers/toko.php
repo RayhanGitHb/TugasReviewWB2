@@ -23,16 +23,18 @@ class Toko extends CI_Controller{
 		
 		if($this->form_validation->run() == TRUE)
 		{
+			// $data['merk'] = ['nike', 'adidas', 'kickers', 'eiger', 'bucherri'];
 			$nama = $this->input->post('nama');
 			$nohp = $this->input->post('nohp');
+			$merk = $this->input->post('merk');
 			$harga = $this->input->post('harga');
 			$ukuran = $this->input->post('ukuran');
-			
 			
 			$data = array(
 			'nama' => $nama,
 			'nohp' => $nohp,
-			'harga' => $harga,
+			'merk' => $merk,
+			'harga' => $this->m_data->proses($this->input->post ('merk')),
 			'ukuran' => $ukuran,
 			);
 			$this->m_data->input_data($data, 'transaksi');
@@ -42,7 +44,6 @@ class Toko extends CI_Controller{
 			}
 	}
 			
-	
 	function hapus($id){
 		  $where = array('id' => $id);
 		  $this->m_data->hapus_data($where,'transaksi');

@@ -13,6 +13,7 @@
 		<th>No</th>
 		<th>Nama</th>
 		<th>No HP</th>
+		<th>Merk</th>
 		<th>Harga Sepatu</th>
 		<th>Ukuran Sepatu</th>
 		<th>Action</th>
@@ -25,6 +26,7 @@
 		<td><?php echo $no++ ?></td>
 		<td><?php echo $u->nama ?></td>
 		<td><?php echo $u->nohp ?></td>
+		<td><?php echo $u->merk ?></td>
 		<td><?php echo $u->harga ?></td>
 		<td><?php echo $u->ukuran ?></td>
 		<td>

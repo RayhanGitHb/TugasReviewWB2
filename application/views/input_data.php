@@ -19,14 +19,14 @@
 			<td><input type="text" name="nohp"></td> 
 		</tr> 
 		<tr> 
-			<td><label for="harga">Pilih Merk Sepatu:</label></td> 
+			<td><label for="merk">Pilih Merk Sepatu:</label></td> 
 			<td>
-			<select name="harga" id="harga">
-					<option value="375000">Nike      (Rp. 375000)</option>
-					<option value="300000">Adidas    (Rp. 300000)</option>
-					<option value="250000">Kickers   (Rp. 250000)</option>
-					<option value="275000">Eiger     (Rp. 275000)</option>
-					<option value="400000">Bucherri  (Rp. 400000)</option>
+			<select name="merk" id="merk">
+					<option value="NIKE">Nike</option>
+					<option value="ADIDAS">Adidas</option>
+					<option value="KICKERS">Kickers</option>
+					<option value="EIGER">Eiger</option>
+					<option value="BUCHERRI">Bucherri</option>
 			</select>
 			</td> 
 		</tr> 
